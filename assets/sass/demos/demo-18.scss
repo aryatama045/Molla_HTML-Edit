@@ -152,7 +152,7 @@
 		top: auto;
 		transform: translateY(0);
 		-ms-transform: translateY(0);
-		border: .1rem solid #fff;
+		// border: .1rem solid #fff;
 		border-top-width: 0;
 		border-bottom-width: 0;
 		padding: 6rem 2rem;
@@ -830,10 +830,14 @@
 	}
 
 	.content-right {
+		margin-left: -8rem;
+
 		@include mq('md') {
 			margin-left: -8rem;
 		}
-		margin-left: -8rem;
+		@media (max-width: 575.98px){
+			margin-left: 0rem;
+		}
 	}
 }
 
@@ -846,6 +850,12 @@
 		color: #222;
 		margin: 0;
 		margin-left: -24rem;
+
+		@media (max-width: 575.98px){
+			margin-left: 0rem;
+			font-size: 1.5rem;
+			text-align: center;
+		}
 	}
 
 	.title {
