@@ -7,6 +7,24 @@
 @import '../config/fonts';
 @import '../config/variables';
 
+body{
+	font-family: 'avenir lt pro','avenir' !important;
+}
+
+p {
+	font-family: "avenir lt pro", "avenir" !important;
+    font-size: 16px;
+    color: black;
+}
+
+.ls-1px {
+    letter-spacing: 1px;
+}
+
+.ls-2px {
+    letter-spacing: 2px;
+}
+
 .mb-md-12{
 	margin-bottom: 5rem!important;
 }
@@ -16,12 +34,14 @@
 	font-size: 2.2rem;
 	letter-spacing: -.025em;
 	margin-bottom: 2.4rem;
+	font-family: 'avenir lt pro' !important;
 }
 
 .title.brands,
 .title.instagram {
 	font-size: 2rem;
 	margin-bottom: 4.5rem;
+	letter-spacing: 1.3px;
 }
 
 .header.header-11 {
@@ -35,7 +55,8 @@
 		.menu > li > a {
 			font-weight: 100;
 			letter-spacing: 0.16em;
-			padding-right: 2rem;
+			padding-right: 1.4rem;
+			font-size: 1.3rem !important;
 		}
 	}
 	.wishlist-link .wishlist-count,
@@ -110,7 +131,6 @@
 	.logo-hashtag{
 		margin:auto;
 		width: 15%;
-		margin-bottom: 2rem;
 	}
 }
 
@@ -163,8 +183,8 @@
 	background-size: cover;
 	background-position: center center;
 	.intro-content {
-		width: 740px;
-		max-width: 85%;
+		width: 800px;
+		max-width: 95%;
 		margin-left: auto;
 		margin-right: auto;
 		position: relative;
@@ -399,7 +419,7 @@
 
 .intro-text {
 	font-weight: 400;
-	font-size: 1.7rem;
+	font-size: 24px;
 	line-height: 1.2;
 	letter-spacing: .01em;
 	text-transform: capitalize;
@@ -530,25 +550,25 @@
 	flex: 0 0 100%;
 	max-width: 100%;
 	padding: 3.5rem 0 2rem;
-	font-family: 'avenir lt pro';
+	font-family: 'avenir lt pro','avenir' !important;
+	letter-spacing:  2px;
 	.btn {
 		padding-top: .85rem;
 		padding-bottom: .85rem;
-		font-weight: 500;
 		color: #ffffff;
 		background-color: transparent;
 		border: .1rem solid #ebebeb;
 
+
 		&:hover,
 		&:focus {
 			color: #fff;
-			border-color: $primary-color;
-			background-color: $primary-color;
+			color: white !important;
 		}
 	}
 
 	h4 {
-		font-size: 2rem;
+		font-size: 24px !important;
 		color: #ffffff;
 		font-weight: bold;
 		line-height: 1.3;
@@ -562,18 +582,30 @@
 		line-height: 1.2em;
 		letter-spacing: 0.08em;
 		margin-bottom: 3.6rem;
+		margin-top: 3rem;
 	}
 
 	.product-title {
 		font-weight: 800;
-		font-size: 3rem !important;
+		font-size: 16px !important;
 		letter-spacing: .2em;
 		margin-bottom: 0.7rem;
+		color: white !important;
+		font-family: 'avenir lt pro';
+	}
+
+	.product-tanggal {
+		font-weight: 800;
+		font-size: 28px !important;
+		letter-spacing: .2em;
+		margin-bottom: 0.7rem;
+		color: white !important;
+		font-family: 'avenir lt pro';
 	}
 
 	.product-price {
 		font-weight: bold;
-		font-size: 3rem !important;
+		font-size: 18px !important;
 		margin-bottom: 2.4rem;
 		letter-spacing: .1rem;
 	}
@@ -581,6 +613,7 @@
 	.new-price {
 		font-weight: 600;
 		color: #ffffff;
+		font-size: 26px !important;
 	}
 }
 
@@ -654,6 +687,8 @@
 	}
 }
 
+
+
 @include mq('md') {
 	.deal {
 		flex-direction: row;
@@ -694,7 +729,7 @@
 		}
 
 		.product-title {
-			font-size: 2.4rem;
+			font-size: 16px !important;
 			color: #ffffff;
 		}
 
@@ -739,8 +774,9 @@
 }
 
 .product-title {
-	font-size: 1.4rem;
+	font-size: 16px;
 	letter-spacing: 0;
+	font-family: 'avenir lt pro' !important;
 }
 
 .product-price {
@@ -948,7 +984,7 @@
 	.entry-content p {
 		margin-bottom: 1.3rem;
 		color: #3e3b3b;
-		font-size: 1.7rem;
+		font-size: 16px;
 
 	}
 
@@ -968,6 +1004,13 @@
 	.owl-simple .owl-nav.disabled + .owl-dots {
 		margin-top: 1rem;
 	}
+}
+
+.entry-content p {
+	margin-bottom: 1.3rem;
+	color: #1b1a1a;
+	font-size: 16px;
+
 }
 
 .footer {
@@ -1048,7 +1091,8 @@
 .footer-about{
 	list-style: decimal;
 	text-align: justify;
-	margin: 3rem;
+	margin: 1rem;
+	margin-right: 3rem;
 }
 
 .social-icon {
@@ -1085,10 +1129,12 @@
 	}
 
 	.content-right {
-		margin-left: -8rem;
+		margin-left: -4rem;
+		margin-top: 2.3rem;
 
 		@include mq('md') {
-			margin-left: -8rem;
+			margin-left: -4rem;
+			margin-top: 2.3rem;
 		}
 		@media (max-width: 575.98px){
 			margin-left: 0rem;
@@ -1113,6 +1159,15 @@
 		}
 	}
 
+	.subtitle-about {
+		font-size: 1.6rem;
+		line-height: 1.3;
+		letter-spacing: 0.07em;
+		color: #222;
+		text-align: center;
+		font-family: 'avenir lt pro';
+	}
+
 	.title {
 		font-size: 4.3rem;
 		font-weight: 800;
@@ -1122,6 +1177,13 @@
 		margin: 0;
 		margin-left: -13rem;
 		font-family: "avenir lt pro";
+
+		@media (max-width: 575.98px){
+			margin-left: 0rem;
+			font-size: 2.8rem;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
 	}
 
 	.title-banner-2{
@@ -1319,6 +1381,28 @@
 	display: none;
 }
 
+.testimonial {
+    padding: 37px;
+    margin-left: 1em;
+	text-align: left !important;
+	font-size: 20px;
+	color: black;
+	p{
+		color: black;
+	}
+}
+
+.testimonial-two {
+    padding: 10px;
+    margin-left: 4em;
+	text-align: left !important;
+	font-size: 20px;
+	color: black;
+	p{
+		color: black;
+	}
+}
+
 
 @include mq('sm') {
 	.intro-subtitle {
@@ -1332,7 +1416,7 @@
 	}
 
 	.intro-text {
-		font-size: 1.6rem;
+		font-size: 20px;
 	}
 }
 
@@ -1365,7 +1449,7 @@
 	}
 
 	.intro-text {
-		font-size: 1.8rem;
+		font-size: 24px !important;
 	}
 }
 
@@ -1433,7 +1517,7 @@
 	}
 
 	.intro-text {
-		font-size: 1.5rem;
+		font-size: 24px !important;
 		font-weight: 200;
 	}
 
